@@ -1,0 +1,22 @@
+{
+  "name": "generator-bankia-ui",
+  "version": "0.1.0",
+  "description": "Bankia AAD ui components generator",
+  "files": [
+    "generators/app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "mocha": "^3.0.1"
+  },
+  "scripts": {
+    "test": "mocha test/app.js",
+    "test:debug": "concurrently --kill-others 'node-inspector' 'mocha test/app.js --debug-brk'"
+  }
+}

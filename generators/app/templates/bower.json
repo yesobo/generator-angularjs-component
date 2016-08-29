@@ -1,0 +1,44 @@
+{
+  "author": {
+    "name": "Bankia"
+  },
+  "name": "bankia-ui-<%= input.name %>",
+  "description": "<%= input.description %>",
+  "version": "<%= input.version %>",
+  "homepage": "https://aqdes-stash.cm.es/stash/projects/AIADD/repos/ui-<%= input.name %>",
+  "repository": "https://aqdes-stash.cm.es/stash/scm/aiadd/ui-<%= input.name %>.git",
+  "keywords": [
+    "bankia",
+    "<%= input.name %>"
+  ],
+  "main": [
+    "dist/<%= input.name %>.js",
+    "dist/views/<%= input.name %>.html",
+    "dist/scss/<%= input.name %>.scss"
+  ],
+  "ignore": [
+    "bower_components",
+    "demo",
+    "mocks",
+    "node_modules",
+    "server",
+    "test",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "package.json",
+    ".dev"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-component.js": "0.1.2 - 1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0",
+    "angular-scenario": "~1.4.0",
+    "bankia-ui-styles": "https://aqdes-stash.cm.es/stash/scm/aiadd/ui-styles.git",
+    "bankia-docs-snippetloader": "https://aqdes-stash.cm.es/stash/scm/aicli/docs-snippetloader.git",
+  },
+  "private": true,
+  "resolutions": {
+  }
+}
